@@ -23,6 +23,10 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.termguicolors = true
+vim.cmd 'highlight Normal guibg=NONE ctermbg=NONE'
 
 vim.keymap.set('i', '<leader>kj', '<Esc>')
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
