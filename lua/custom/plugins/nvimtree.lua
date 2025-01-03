@@ -12,6 +12,9 @@ return {
         update_cwd = true, -- Updates the current working directory to match the active file
         ignore_list = {}, -- List of file types or file names to ignore
       },
+      git = {
+        ignore = false
+      }
     }
   end,
 }
