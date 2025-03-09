@@ -3,9 +3,9 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.mouse = 'a'
-vim.opt.showmode = false
+vim.opt.showmode = true
 vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
@@ -47,6 +47,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+vim.keymap.set('n', '<leader>mr', function()
+  vim.cmd '!make run'
+end, { noremap = true, silent = true, desc = 'Compile & Run Java with Makefile' })
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

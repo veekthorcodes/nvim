@@ -13,8 +13,15 @@ return {
         ignore_list = {}, -- List of file types or file names to ignore
       },
       git = {
-        ignore = false
-      }
+        ignore = false,
+      },
+      view = {
+        width = 40,
+      },
+      renderer = {
+        group_empty = true,
+      },
     }
+    vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
   end,
 }
