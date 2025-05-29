@@ -89,6 +89,8 @@ return {
 		dapui.setup({
 			icons = { expanded = "▾", collapsed = "▸", current_frame = "*" },
 			controls = {
+				enabled = true,
+				element = {},
 				icons = {
 					pause = "⏸",
 					play = "▶",

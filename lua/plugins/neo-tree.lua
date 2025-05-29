@@ -9,5 +9,16 @@ return {
 	lazy = false, -- neo-tree will lazily load itself
 	---@module "neo-tree"
 	---@type neotree.Config?
-	opts = {},
+	opts = {
+		enable_git_status = true,
+		popup_border_style = "rounded",
+		close_if_last_window = true,
+		filesystem = {
+			hijack_netrw_behavior = "open_default",
+			follow_current_file = {
+				enabled = true,
+			},
+			use_libuv_file_watcher = true,
+		},
+	},
 }
