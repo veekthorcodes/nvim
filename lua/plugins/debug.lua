@@ -90,7 +90,7 @@ return {
 			icons = { expanded = "▾", collapsed = "▸", current_frame = "*" },
 			controls = {
 				enabled = true,
-				element = {},
+				element = "",
 				icons = {
 					pause = "⏸",
 					play = "▶",
