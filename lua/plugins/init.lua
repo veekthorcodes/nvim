@@ -11,4 +11,7 @@ return {
 		---@type ibl.config
 		opts = {},
 	},
+	{ "wakatime/vim-wakatime", lazy = false },
+
+	-- { "rest-nvim/rest.nvim" },
 }

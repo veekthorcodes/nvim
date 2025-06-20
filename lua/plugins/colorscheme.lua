@@ -1,14 +1,17 @@
 return {
-	"shaunsingh/nord.nvim",
-
-	-- make sure we load this during startup if it is your main colorscheme
-	lazy = false,
-
-	-- make sure to load this before all the other start plugins
+	"catppuccin/nvim",
+	name = "catppuccin",
 	priority = 1000,
-
+	lazy = false,
 	config = function()
-		-- load the colorscheme here
-		vim.cmd([[colorscheme nord]])
+		vim.cmd("colorscheme catppuccin")
+		require("catppuccin").setup({
+			flavour = "auto", -- latte, frappe, macchiato, mocha
+			background = {
+				light = "latte",
+				dark = "frappe",
+			},
+			transparent_background = true,
+		})
 	end,
 }
