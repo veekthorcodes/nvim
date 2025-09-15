@@ -1,17 +1,31 @@
+--[[ return {
+	"rose-pine/neovim",
+	name = "rose-pine",
+	priority = 1000,
+	config = function()
+		vim.cmd("colorscheme rose-pine")
+	end,
+}
+]]
+
+--[[ {
+	"rebelot/kanagawa.nvim",
+	priority = 1000,
+	lazy = false,
+	config = function()
+		require("kanagawa").setup({})
+		vim.cmd("colorscheme kanagawa")
+	end,
+}
+]]
+
 return {
 	"catppuccin/nvim",
 	name = "catppuccin",
 	priority = 1000,
-	lazy = false,
 	config = function()
-		vim.cmd("colorscheme catppuccin")
 		require("catppuccin").setup({
-			flavour = "auto", -- latte, frappe, macchiato, mocha
-			background = {
-				light = "latte",
-				dark = "frappe",
-			},
-			transparent_background = true,
+			vim.cmd("colorscheme catppuccin"),
 		})
 	end,
 }

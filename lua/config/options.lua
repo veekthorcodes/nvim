@@ -8,10 +8,10 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Number of spaces a tab counts for
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 
 -- Spaces per indent
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
 
 -- Convert tabs to spaces
 vim.opt.expandtab = true
