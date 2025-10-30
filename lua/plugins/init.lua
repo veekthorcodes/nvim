@@ -30,4 +30,8 @@ return {
 			})
 		end,
 	},
+	{
+		"mfussenegger/nvim-jdtls",
+		ft = "java", -- Only loads when you open Java files
+	},
 }
