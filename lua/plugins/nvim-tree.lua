@@ -47,5 +47,6 @@ return {
 				enable = true,
 			},
 		})
+    vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap=true, silent=true, desc="toggle nvim tree"})
 	end,
 }
