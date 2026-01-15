@@ -7,25 +7,23 @@
 	end,
 }
 ]]
-
---[[ {
+return {
 	"rebelot/kanagawa.nvim",
 	priority = 1000,
 	lazy = false,
 	config = function()
 		require("kanagawa").setup({})
-		vim.cmd("colorscheme kanagawa")
+		vim.cmd("colorscheme kanagawa-dragon")
 	end,
 }
-]]
 
-return {
-	"catppuccin/nvim",
-	name = "catppuccin",
-	priority = 1000,
-	config = function()
-		require("catppuccin").setup({
-			vim.cmd("colorscheme catppuccin"),
-		})
-	end,
-}
+-- return {
+-- 	"catppuccin/nvim",
+-- 	name = "catppuccin",
+-- 	priority = 1000,
+-- 	config = function()
+-- 		require("catppuccin").setup({
+-- 			vim.cmd("colorscheme catppuccin"),
+-- 		})
+-- 	end,
+-- }
