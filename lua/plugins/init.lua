@@ -6,15 +6,14 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		main = "ibl",
-		---@module "ibl"
-		---@type ibl.config
-		opts = {},
-	},
-
-	{ "wakatime/vim-wakatime", lazy = false },
+	-- {
+	-- 	"lukas-reineke/indent-blankline.nvim",
+	-- 	main = "ibl",
+	-- 	---@module "ibl"
+	-- 	---@type ibl.config
+	-- 	opts = {},
+	-- },
+	--
 
 	{
 		"windwp/nvim-ts-autotag",
@@ -25,10 +24,15 @@ return {
 					-- Defaults
 					enable_close = true, -- Auto close tags
 					enable_rename = true, -- Auto rename pairs of tags
-					enable_close_on_slash = false, -- Auto close on trailing </
+					enable_close_on_slash = true, -- Auto close on trailing </
 				},
 			})
 		end,
+	},
+	{
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = true,
 	},
 	{
 		"mfussenegger/nvim-jdtls",

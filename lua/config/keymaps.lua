@@ -11,4 +11,4 @@ vim.keymap.set("n", "<Down>", ":resize -2<CR>", { desc = "Decrease window height
 
 vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>", { desc = "Clear search highlights" })
 
-vim.keymap.set("i", "<leader>kj", "<Esc>", { desc = "Exit normal mode" })
+vim.keymap.set("i", "kj", "<Esc>", { desc = "Exit normal mode" })

@@ -1,4 +1,9 @@
 require("config.options")
 require("config.keymaps")
 require("config.autocmds")
-require("config.lazy")
+
+if vim.g.vscode then
+	require("config.vscode")
+else
+	require("config.lazy")
+end

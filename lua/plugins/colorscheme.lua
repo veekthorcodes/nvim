@@ -1,4 +1,4 @@
---[[ return {
+return {
 	"rose-pine/neovim",
 	name = "rose-pine",
 	priority = 1000,
@@ -6,16 +6,16 @@
 		vim.cmd("colorscheme rose-pine")
 	end,
 }
-]]
-return {
-	"rebelot/kanagawa.nvim",
-	priority = 1000,
-	lazy = false,
-	config = function()
-		require("kanagawa").setup({})
-		vim.cmd("colorscheme kanagawa-dragon")
-	end,
-}
+
+-- return {
+-- 	"rebelot/kanagawa.nvim",
+-- 	priority = 1000,
+-- 	lazy = false,
+-- 	config = function()
+-- 		require("kanagawa").setup({})
+-- 		vim.cmd("colorscheme kanagawa-dragon")
+-- 	end,
+-- }
 
 -- return {
 -- 	"catppuccin/nvim",
