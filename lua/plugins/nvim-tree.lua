@@ -1,4 +1,4 @@
-return {
+M = {
 	"nvim-tree/nvim-tree.lua",
 	version = "*",
 	lazy = false,
@@ -47,6 +47,7 @@ return {
 				enable = true,
 			},
 		})
-    vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap=true, silent=true, desc="toggle nvim tree"})
+		vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true, desc = "" })
 	end,
 }
+return M

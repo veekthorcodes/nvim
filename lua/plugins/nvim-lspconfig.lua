@@ -1,4 +1,5 @@
 return {
+	{ "b0o/schemastore.nvim" },
 	{
 		-- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
 		-- used for completion, annotations and signatures of Neovim apis
@@ -185,6 +186,27 @@ return {
 					},
 				},
 				ts_ls = {},
+				terraformls = {},
+				yamlls = {
+					settings = {
+						yaml = {
+							schemaStore = { enable = false, url = "" },
+							schemas = require("schemastore").yaml.schemas(),
+						},
+					},
+				},
+				pyright = {
+					settings = {
+						python = {
+							analysis = {
+								autoSearchPaths = true,
+								useLibraryCodeForTypes = true,
+								diagnosticMode = "openFilesOnly",
+							},
+						},
+					},
+				},
+				ruff = {},
 			}
 
 			-- Ensure the servers and tools above are installed
@@ -195,6 +217,11 @@ return {
 				"typescript-language-server",
 				"tailwindcss-language-server",
 				"jdtls",
+				"terraform-ls",
+				"yaml-language-server",
+				"pyright",
+				"ruff",
+				"debugpy",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

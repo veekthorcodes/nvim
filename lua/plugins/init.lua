@@ -1,5 +1,14 @@
 return {
-	{ "nvim-treesitter/nvim-treesitter", branch = "master", lazy = false, build = ":TSUpdate" },
+	{
+		"nvim-treesitter/nvim-treesitter",
+		branch = "master",
+		lazy = false,
+		build = ":TSUpdate",
+		opts = {
+			ensure_installed = { "terraform", "hcl" },
+			auto_install = true,
+		},
+	},
 
 	{
 		"nvim-lualine/lualine.nvim",
